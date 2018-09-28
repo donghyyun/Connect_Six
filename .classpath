@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Connect_Six_0801/src"/>
+	<classpathentry kind="src" path="Connect_Six_0802/src"/>
+	<classpathentry kind="src" path="Connect_Six_0805/src"/>
+	<classpathentry kind="output" path="Connect_Six_0801/bin"/>
+</classpath>
