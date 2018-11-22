@@ -29,7 +29,7 @@ public class SelectColor extends JPanel implements ActionListener{
 		
 		this.setBackground(new Color(160,160,160));
 		this.setLayout(null);
-		this.setBounds(0, 0, Width*3/5 + 14, Height*3/4 + 30);
+		this.setBounds(0, 0, Width /*+ 14*/, Height /*+ 30*/);
 		border = new LineBorder(new Color(66, 66, 60), 4, true);
 		
 		title = new JLabel("Select Color");
@@ -47,8 +47,8 @@ public class SelectColor extends JPanel implements ActionListener{
 		user.setVisible(false);
 		computer.setVisible(false);
 		
-		black = new JButton(new ImageIcon(".\\src\\Black.png"));
-		white = new JButton(new ImageIcon(".\\src\\White.png"));
+		black = new JButton(new ImageIcon("./src/Black.png"));
+		white = new JButton(new ImageIcon("./src/White.png"));
 		
 		black.setBorderPainted(false);  
 		black.setContentAreaFilled(false);
@@ -83,7 +83,7 @@ public class SelectColor extends JPanel implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource() == black) {
 			if(!selected) {
-				int ans = JOptionPane.showConfirmDialog(null, "Èæµ¹·Î °ÔÀÓÇÏ½Ã°Ú½À´Ï±î?", "È®ÀÎ", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null);
+				int ans = JOptionPane.showConfirmDialog(null, "í‘ëŒë¡œ ê²Œì„í•˜ì‹œê² ìŠµê¹Œ?" , "ì•Œë¦¼", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null);
 				if(ans == 0) {
 					black.setFocusable(false);
 					white.setEnabled(false);
@@ -97,13 +97,13 @@ public class SelectColor extends JPanel implements ActionListener{
 				}
 			}
 			else
-				JOptionPane.showMessageDialog(null, "ÀÌ¹Ì ¼±ÅÃµÇ¾ú½À´Ï´Ù!", "°æ°í", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null, "ëŒì„ ì´ë¯¸ ì„ íƒí–ˆìŠµë‹ˆë‹¤!", "ì˜¤ë¥˜", JOptionPane.ERROR_MESSAGE);
 
 		}
 		
 		if(e.getSource() == white) {
 			if(!selected) {
-				int ans = JOptionPane.showConfirmDialog(null, "¹éµ¹·Î °ÔÀÓÇÏ½Ã°Ú½À´Ï±î?", "È®ÀÎ", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null);
+				int ans = JOptionPane.showConfirmDialog(null, "ë°±ëŒë¡œ ê²Œì„í•˜ì‹œê² ìŠµê¹Œ?" , "ì•Œë¦¼", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null);
 				if(ans == 0) {
 					white.setFocusable(false);
 					black.setEnabled(false);
@@ -117,7 +117,7 @@ public class SelectColor extends JPanel implements ActionListener{
 				}
 			}
 			else
-				JOptionPane.showMessageDialog(null, "ÀÌ¹Ì ¼±ÅÃµÇ¾ú½À´Ï´Ù!", "°æ°í", JOptionPane.ERROR_MESSAGE);
+				JOptionPane.showMessageDialog(null, "ëŒì„ ì´ë¯¸ ì„ íƒí–ˆìŠµë‹ˆë‹¤!", "ì˜¤ë¥˜", JOptionPane.ERROR_MESSAGE);
 		}
 		
 	}

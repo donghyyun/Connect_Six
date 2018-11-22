@@ -13,8 +13,8 @@ public class Stone {
 	public static Image white;
 	BufferedImage bimg;
 	
-	public static String bsfname = ".\\src\\Black.png";
-	public static String wsfname = ".\\src\\White.png";
+	public static String bsfname = "./src/Black.png";
+	public static String wsfname = "./src/White.png";
 		
 	public Stone() {
 		try {

@@ -8,6 +8,11 @@ import javax.swing.JFrame;
 public class GameFrame extends JFrame implements ActionListener{
 	public static int Width = (int)Toolkit.getDefaultToolkit().getScreenSize().getWidth();
 	public static int Height = (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+	public static int Fswidth = Width/5;
+	public static int Fewidth = Width*4/5;
+	public static int Fsheight = Height/8;
+	public static int Feheight = Height*7/8;
+	
 	private Stone st = new Stone();
 	private GamePanel gp = new GamePanel();
 	private SelectColor sc = new SelectColor(this);
@@ -22,7 +27,7 @@ public class GameFrame extends JFrame implements ActionListener{
 	
 	public void setframe() {
 		this.setLayout(null);
-		this.setBounds(Width/5, Height/8, Width*3/5 + 14, Height*3/4 + 30);
+		this.setBounds(0, 0, Width /*+ 14*/, Height/* + 30*/);
 	}
 	
 	public void gamestart() {
@@ -49,10 +54,4 @@ public class GameFrame extends JFrame implements ActionListener{
 		GameFrame gf = new GameFrame();
 		gf.gamestart();
 	}
-	
-	/*public void regame() {
-		JPanel content = (JPanel)this.getContentPane();
-		content.removeAll();
-		revalidate();
-	}*/
 }

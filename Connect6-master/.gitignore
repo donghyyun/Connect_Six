@@ -1,0 +1,13 @@
+.idea
+*/out/
+.class
+/AlphaBeta.class
+/BlackPlayer.class
+/Coordinates.class
+/Driver.class
+/EvaluateBoard.class
+/GameBoard.class
+/Move.class
+/Player.class
+/Score.class
+/WhitePlayer.class
